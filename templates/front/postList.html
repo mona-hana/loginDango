@@ -1,0 +1,18 @@
+{% comment %} {% extends 'front/index.html' %} {% endcomment %}
+{% load static %}
+{% block content %}
+    {% for post in posts %}
+        <section class="b-post b-post_img-left b-post_img-260 clearfix">
+            <div class="entry-main">
+                <div class="entry-header">
+                    <h2 class="entry-title" name="title">{{ post.title }} </h2>
+                
+                </div>
+                <div class="entry-content">
+                    <p name="text"> {{ post.text}}
+                    </p>
+                </div>
+            </div>
+        </section>
+    {% endfor %}
+{% endblock %}

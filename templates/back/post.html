@@ -1,0 +1,70 @@
+{% extends 'back/home.html' %}
+
+{% block content %}
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>جداول داده</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-left">
+                    <li class="breadcrumb-item"><a href="#">خانه</a></li>
+                    <li class="breadcrumb-item active">جداول داده</li>
+                    </ol>
+                </div>
+                </div>
+            </div><!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+            <div class="row">
+                <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                    <h3 class="card-title">پست</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                        <th>عنوان</th>
+                        <th>متن</th>
+                        <th>تاریخ انتشار</th>
+                        </tr>
+                        </thead>
+                        {% for post in posts %}
+                        <tbody>
+                        <tr>
+                        <td>
+                            <h6><a href="">{{ post.title }}</a></h6>
+                        </td>
+                        <td><p>{{ post.text}}</p></td>
+                        <td>
+                            <time class="date">
+                                {{ post.published_date }}
+                            </time>
+                        </td>
+                        
+                        </tr>
+                        </tbody>
+                        {% endfor %}
+                        <tfoot>
+                        <tr>
+                        <th>عنوان</th>
+                        <th>متن</th>
+                        <th>تاریخ انتشار</th>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+{% endblock %}
