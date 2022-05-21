@@ -15,7 +15,7 @@ def post(request):
 
 def postList(request):
     posts = Post.objects.order_by('published_date')
-    return render(request, 'front/index.html' , {'posts': posts}) 
+    return render(request, 'front/postList.html' , {'posts': posts}) 
     
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)

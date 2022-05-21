@@ -1,18 +1,30 @@
-{% comment %} {% extends 'front/index.html' %} {% endcomment %}
+{% extends 'front/index.html' %} 
 {% load static %}
 {% block content %}
     {% for post in posts %}
-        <section class="b-post b-post_img-left b-post_img-260 clearfix">
+    <section class="b-post b-post_img-left b-post_img-120 clearfix">
+        <div class="entry-media"><a class="js-zoom-images  img-hover-effect" href="{% static "front/assets/media/content/posts/120x95/1.jpg" %}"><img class="img-responsive hov-scal img-border-sm" src="{% static "front/assets/media/content/posts/120x95/1.jpg" %}" alt="Foto"/></a></div>
+        <div class="entry-main">
+          <div class="entry-header">
+            <h2 class="entry-title"><a href="#">{{ post.text}}</a></h2>
+            <div class="entry-meta"><span class="entry-meta__item"><a class="entry-meta__link" href="#"><strong>{{ post.title }}</strong></a></span><span class="entry-meta__item"><i class="icon fa fa-comment-o text-primary"></i><a class="entry-meta__link" href="#">29</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+        {% comment %} <section class="b-post b-post_img-left b-post_img-260 clearfix">
             <div class="entry-main">
                 <div class="entry-header">
-                    <h2 class="entry-title" name="title">{{ post.title }} </h2>
+                    <h2 class="entry-title">{{ post.title }} </h2>
                 
                 </div>
                 <div class="entry-content">
-                    <p name="text"> {{ post.text}}
+                    <p> {{ post.text}}
                     </p>
                 </div>
             </div>
-        </section>
+        </section> {% endcomment %}
     {% endfor %}
 {% endblock %}

@@ -8,7 +8,7 @@ urlpatterns = [
     path('post_list', post_list, name='post_list'),
     path('post_new', post_new, name='post_new'),
     path('post', post , name='post' ) ,
-    #path('postList', postList, name='postList' ) ,
+    path('postList', postList, name='postList' ) ,
    
    
 ]

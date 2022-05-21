@@ -456,7 +456,7 @@
                 <section class="widget section-sidebar">
                   <h2 class="widget-title ui-title-inner"><span class="ui-title-inner__inner">recent posts</span></h2>
                   <div class="widget-content">
-                   {% comment %}  <section class="b-post b-post_img-left b-post_img-120 clearfix">
+                    <section class="b-post b-post_img-left b-post_img-120 clearfix">
                       <div class="entry-media"><a class="js-zoom-images  img-hover-effect" href="{% static "front/assets/media/content/posts/120x95/1.jpg" %}"><img class="img-responsive hov-scal img-border-sm" src="{% static "front/assets/media/content/posts/120x95/1.jpg" %}" alt="Foto"/></a></div>
                       <div class="entry-main">
                         <div class="entry-header">
@@ -465,10 +465,11 @@
                           </div>
                         </div>
                       </div>
-                    </section> {% endcomment %}
+                    </section> 
                     <!-- end .post-->  
-                   
-                    {% comment %} {% include "./postList.html" %} {% block content %}{% endblock %} {% endcomment %}
+                  
+                    {% block content %} {% endblock %}
+                  
                   </div>
                   
                 </section>
