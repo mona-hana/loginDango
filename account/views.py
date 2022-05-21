@@ -7,7 +7,7 @@ from django.contrib.auth import authenticate, login, logout
 def index(request):
    return render(request , "front/index.html" ) 
 
-def newLogin(request):
+def login_user(request):
    
   message = None
   if request.method  == 'POST' :
@@ -27,10 +27,10 @@ def newLogin(request):
 
         else:
             message = 'نام کاربری یا رمز عبور اشتباه است'
-            return render(request, 'front/newLogin.html', {'message':message})
+            return render(request, 'front/login_user.html', {'message':message})
 
 
-  return render(request, 'front/newLogin.html')
+  return render(request, 'front/login_user.html')
 
 
 

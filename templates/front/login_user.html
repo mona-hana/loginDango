@@ -22,7 +22,7 @@
 <H3>ورود</H3>
 <br />
 <br />
-<form method="post" action="{% url 'newLogin' %}" >
+<form method="post" action="{% url 'login_user' %}" >
     {% csrf_token %}
 <div id="login-box-name" style="margin-top:20px;">نام کاربری</div>
 <div id="login-box-field" style="margin-top:20px;"><input name="username" type="text" class="form-login" title="username"  size="30" maxlength="2048" /></div>

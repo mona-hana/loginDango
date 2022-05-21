@@ -47,7 +47,7 @@
         <a href="index3.html" class="nav-link">خانه</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">تماس</a>
+        <a href="logout_admin" class="nav-link">خارج شوید</a>
       </li>
     </ul>
 
@@ -296,12 +296,7 @@
                 </p>
               </a>
               <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="login_admin" class="nav-link">
-                    <i class="fa fa-circle-o nav-icon"></i>
-                    <p>فرم ورود</p>
-                  </a>
-                </li>
+                
                 <li class="nav-item">
                   <a href="{% static "back/pages/forms/advanced.html" class="nav-link"%}">
                     <i class="fa fa-circle-o nav-icon"></i>
@@ -370,12 +365,7 @@
                     <p>اینباکس</p>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a href= "{% static "back/pages/mailbox/compose.html" %}" class="nav-link">
-                    <i class="fa fa-circle-o nav-icon"></i>
-                    <p>ایجاد</p>
-                  </a>
-                </li>
+                
                 <li class="nav-item">
                   <a href="{% static "back/pages/mailbox/read-mail.html"%}" class="nav-link">
                     <i class="fa fa-circle-o nav-icon"></i>
@@ -405,12 +395,7 @@
                     <p>پروفایل</p>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="fa fa-circle-o nav-icon"></i>
-                    <p>صفحه ورود</p>
-                  </a>
-                </li>
+               
                 <li class="nav-item">
                   <a href="{% static "back/pages/examples/register.html" %}" class="nav-link">
                     <i class="fa fa-circle-o nav-icon"></i>
@@ -433,47 +418,9 @@
                   <i class="fa fa-angle-left right"></i>
                 </p>
               </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{% static "back/pages/examples/404.html" %}" class="nav-link">
-                    <i class="fa fa-circle-o nav-icon"></i>
-                    <p>ارور 404</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{% static "back/pages/examples/500.html"%}" class="nav-link">
-                    <i class="fa fa-circle-o nav-icon"></i>
-                    <p>ارور 500</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="back/pages/examples/blank.html" class="nav-link">
-                    <i class="fa fa-circle-o nav-icon"></i>
-                    <p>صفحه خالی</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="starter.html" class="nav-link">
-                    <i class="fa fa-circle-o nav-icon"></i>
-                    <p>صفحه شروع</p>
-                  </a>
-                </li>
-              </ul>
+              
             </li>
-            <li class="nav-header">متفاوت</li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fa fa-file"></i>
-                <p>مستندات</p>
-              </a>
-            </li>
-            <li class="nav-header">برچسب‌ها</li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fa fa-circle-o text-danger"></i>
-                <p class="text">مهم</p>
-              </a>
-            </li>
+           
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fa fa-circle-o text-warning"></i>
@@ -493,9 +440,7 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-  <main>
-  {% block content %} {% endblock %}
-</main>
+
 </div>
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
